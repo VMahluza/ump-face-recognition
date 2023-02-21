@@ -25,3 +25,5 @@ def student(request, StudentNumber):
         except:
             return HttpResponse(status=401)
 
+
+

@@ -3,8 +3,8 @@ from django.core.validators import MinLengthValidator
 
 # Create your models here.
 class Student(models.Model):
-    StudentNumber = models.CharField(primary_key=True,max_length=7,null=False, blank=False, validators=[
-        MinLengthValidator(7, 'Name must have atleast 3 charactors')
+    StudentNumber = models.CharField(primary_key=True,max_length=11,null=False, blank=False, validators=[
+        MinLengthValidator(11, 'Name must have atleast 3 charactors')
     ])
     
     Firstname = models.CharField(max_length=150,null=False, blank=False, validators=[
